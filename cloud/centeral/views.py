@@ -23,6 +23,9 @@ class centeralViewSet(viewsets.ViewSet) :
 
     def create(self, request):
         serializer = centeralSerializer(data=request.data)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return  response(serializer.data,status=status.HTTP_201_CREATED )
 
     def reserve_fly(self, request):
         pass
