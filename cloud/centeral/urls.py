@@ -17,7 +17,7 @@ urlpatterns = [
     path('centeral/filter', centeralViewSet.as_view({
         'post' : 'filter'
     })),
-    path('centeral/transport plane', centeralViewSet.as_view({
+    path('centeral/carrier plane', centeralViewSet.as_view({
         'post' : 'get_planes_of_a_company'
     })),
 
