@@ -14,7 +14,7 @@ class transport(models.Model) :
     rank = models.IntegerField()
 
 class centeral(models.Model):
-    city_origin = models.CharField(max_length=300)
+    city_origin = models.CharField(max_length=200)
     airfield_origin = models.CharField(max_length=300)
     destination_city = models.CharField(max_length=300)
     destination_airport = models.CharField(max_length=300)
