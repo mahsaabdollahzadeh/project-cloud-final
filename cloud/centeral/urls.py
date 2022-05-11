@@ -4,6 +4,7 @@ from django.urls import path
 from .views import centeralViewSet
 
 
+
 urlpatterns = [
     path('centeral', centeralViewSet.as_view({
         'post' : 'list'
